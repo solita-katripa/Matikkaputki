@@ -25,7 +25,7 @@ jobs:
       name: Build
     - run: dotnet test
       name: Unit tests
-    - run: dotnet test --logger "trx;LogFileName=report.trx" --results-directory./test-output
+    - run: dotnet test --logger "trx;LogFileName=report.trx" --results-directory ./test-output
       name: Unit tests
     - name: Publish test results
       uses: EnricoMi/publish-unit-test-result-action@v2.16.1

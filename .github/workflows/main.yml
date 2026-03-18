@@ -16,4 +16,6 @@ jobs:
       with:
         dotnet-version: '10.0.x'
     - run: dotnet restore
+      name: Restore
     - run: dotnet build
+      name: Build

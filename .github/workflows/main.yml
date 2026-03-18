@@ -2,7 +2,10 @@ name: Matikkapipeline
 on:
   push:
     branches: [ main ]
- 
+defaults:
+  run:
+    working-directory: ./MathWorkshop
+    
 jobs:
   build:
     runs-on: ubuntu-latest
